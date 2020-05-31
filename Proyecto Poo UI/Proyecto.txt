@@ -1,0 +1,1 @@
+jdbc:mysql://localhost/aerodynamic?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&user=root&password=/Maxwell1999

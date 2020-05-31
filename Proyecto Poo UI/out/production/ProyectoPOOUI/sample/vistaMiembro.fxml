@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panel_principal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerVistaMiembro">
+    <children>
+        <HBox layoutX="10.0" layoutY="10.0" opacity="0.76" prefHeight="30.0" prefWidth="736.0" style="-fx-background-color: #273c75;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Separator prefHeight="30.0" prefWidth="688.0" visible="false" />
+                <ImageView fx:id="btn_minimizar" fitHeight="27.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/icons8_minimize_window_32px.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets top="1.0" />
+                    </HBox.margin>
+                </ImageView>
+                <ImageView fx:id="btn_salir" fitHeight="27.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/icons8_delete_sign_32px.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets top="1.0" />
+                    </HBox.margin>
+                </ImageView>
+            </children>
+        </HBox>
+        <AnchorPane prefHeight="492.0" prefWidth="94.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="30.0">
+            <children>
+                <VBox prefHeight="492.0" prefWidth="94.0" style="-fx-background-color: #2c3e50;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Separator orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" visible="false" />
+                        <ImageView fx:id="btn_accederInicio" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/icons8_home_64px_1.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets left="26.0" />
+                            </VBox.margin>
+                        </ImageView>
+                        <Label text="Inicio" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="30.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Verdana" size="12.0" />
+                            </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="50.0" prefWidth="2.0" visible="false" />
+                        <ImageView fx:id="btn_vuelosRealizados" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/icons8_checkmark_64px_2.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets left="26.0" />
+                            </VBox.margin>
+                        </ImageView>
+                        <Label text="Realizados" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="15.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Verdana" size="12.0" />
+                            </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="50.0" prefWidth="2.0" visible="false" />
+                        <ImageView fx:id="btn_vuelosProgramados" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/icons8_todo_list_64px_1.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets left="26.0" />
+                            </VBox.margin>
+                        </ImageView>
+                        <Label text="Programados" textFill="WHITE">
+                            <font>
+                                <Font name="Verdana" size="12.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="7.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="50.0" prefWidth="2.0" visible="false" />
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="panel_bienvenidaMiembro" layoutX="94.0" layoutY="29.0" prefHeight="171.0" prefWidth="106.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="94.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+            <children>
+                <Label layoutX="201.0" layoutY="91.0" text="Bienvenido">
+                    <font>
+                        <Font name="Verdana" size="40.0" />
+                    </font>
+                </Label>
+                <Label layoutX="180.0" layoutY="181.0" text="Miembro Tripulante">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="95.0" fitWidth="101.0" layoutX="264.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/icons8_air_pilot_hat_64px_2.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="63.0" fitWidth="188.0" layoutX="218.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/logoAeroDynamic.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="btn_cerrarSesion" fitHeight="65.0" fitWidth="48.0" layoutX="557.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/icons8_exit_96px.png" />
+                    </image>
+                </ImageView>
+                <Line endX="129.0" layoutX="311.0" layoutY="142.0" startX="-129.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="panel_vuelosRealizados" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="94.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+            <children>
+                <Label layoutX="41.0" layoutY="54.0" text="Vuelos Realizados" AnchorPane.bottomAnchor="417.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="395.0" AnchorPane.topAnchor="48.0">
+                    <font>
+                        <Font name="Verdana" size="20.0" />
+                    </font>
+                </Label>
+                <Line endX="124.0" layoutX="122.0" layoutY="86.0" startX="-81.0" AnchorPane.topAnchor="79.5" />
+                  <TableView fx:id="tbl_vuelosRealizados" layoutX="41.0" layoutY="91.0" prefHeight="346.0" prefWidth="574.0">
+               <columns>
+                  <TableColumn fx:id="clm_lineaAerea" prefWidth="76.0" text="Linea aerea" />
+                  <TableColumn fx:id="clm_aeropuertoLlegada" prefWidth="121.0" text="Aeropuerto Origen" />
+                  <TableColumn fx:id="clm_horaSalida" prefWidth="75.0" text="Hora Salida" />
+                  <TableColumn fx:id="clm_sala" minWidth="1.0" prefWidth="48.0" text="Sala" />
+                  <TableColumn fx:id="clm_aeropuertoDestino" prefWidth="117.0" text="Aeropuerto Destino" />
+                  <TableColumn fx:id="clm_horaLlegada" prefWidth="91.0" text="Hora Llegada" />
+                  <TableColumn fx:id="clm_estado" prefWidth="41.0" text="Estado" />
+               </columns>
+                  </TableView>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="panel_vuelosProgramados" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="94.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+            <children>
+                  <TableView fx:id="tbl_vuelosProgramados" layoutX="42.0" layoutY="91.0" prefHeight="346.0" prefWidth="580.0">
+               <columns>
+                  <TableColumn fx:id="clm_lineaAerea1" prefWidth="76.0" text="Linea aerea" />
+                  <TableColumn fx:id="clm_aeropuertoLlegada1" prefWidth="121.0" text="Aeropuerto Origen" />
+                  <TableColumn fx:id="clm_horaSalida1" prefWidth="75.0" text="Hora Salida" />
+                  <TableColumn fx:id="clm_sala1" minWidth="1.0" prefWidth="48.0" text="Sala" />
+                  <TableColumn fx:id="clm_aeropuertoDestino1" prefWidth="117.0" text="Aeropuerto Destino" />
+                  <TableColumn fx:id="clm_horaLlegada1" prefWidth="91.0" text="Hora Llegada" />
+                  <TableColumn fx:id="clm_estado1" prefWidth="41.0" text="Estado" />
+               </columns>
+                  </TableView>
+                <Label layoutX="41.0" layoutY="48.0" text="Vuelos Programados" AnchorPane.bottomAnchor="417.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="395.0" AnchorPane.topAnchor="48.0">
+                    <font>
+                        <Font name="Verdana" size="20.0" />
+                    </font>
+                </Label>
+                <Line endX="143.0" layoutX="123.0" layoutY="80.0" startX="-81.0" AnchorPane.topAnchor="79.5" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
